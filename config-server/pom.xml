@@ -9,7 +9,7 @@
         <version>2.1.3.RELEASE</version>
         <relativePath/> -->
         <groupId>yu.gsmc</groupId>
-        <artifactId>sc-demo-parent</artifactId>
+        <artifactId>SpringCloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>yu.gsmc</groupId>
