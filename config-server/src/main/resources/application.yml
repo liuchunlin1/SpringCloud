@@ -5,12 +5,27 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8080/eureka
+#git
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/liuchunlin1/cloud-config.git
-          search-paths: cloud-config/config
+          uri: https://github.com/liuchunlin1/cloud-config.git  #git地址
+          search-paths: config/  #配置文件所在目录，如：xxx/yyy/hhh
+#          username: 18159803731@163.com
+#          password: lcl19940709
   application:
-    name: config-server
+    name: config-server #server名字
+
+#本地
+#spring:
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: F:/SpringCloudDemo/SpringCloud/config-server/src/main/resources/yml  #配置文件本地目录，斜杠为反斜杠,最后面跟不跟斜杠都可以
+#  application:
+#    name: config-server
